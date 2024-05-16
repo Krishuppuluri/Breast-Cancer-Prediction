@@ -1,0 +1,41 @@
+.ecg-chart-container {
+    font-family: 'Nunito', sans-serif; /* This is just an example, use whatever font you prefer */
+    color: #333;
+    background: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners for the chart area */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    justify-content: flex-start; /* align items to the start to avoid stretching */
+    padding: 20px;
+    gap: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Center the container on the page */
+  }
+  
+  .recharts-default-tooltip {
+    background-color: #fff !important; /* Tooltip background */
+    border: 1px solid #ddd !important; /* Tooltip border */
+    border-radius: 4px !important; /* Tooltip rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important; /* Tooltip shadow */
+  }
+  
+  .recharts-cartesian-grid line {
+    stroke: #eee; /* Lighter grid lines */
+  }
+  
+  .recharts-line .recharts-curve {
+    stroke: #82ca9d; /* Line color */
+    stroke-width: 2px; /* Line thickness */
+  }
+  
+  /* If you are using tick formatters, you can style them here */
+  .recharts-xaxis-tick,
+  .recharts-yaxis-tick {
+    font-size: 12px; /* Adjust tick font size */
+    fill: #666; /* Adjust tick color */
+  }
+  

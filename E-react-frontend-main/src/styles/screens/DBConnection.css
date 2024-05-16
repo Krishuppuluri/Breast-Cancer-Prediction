@@ -1,0 +1,49 @@
+.about {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 32px;
+  color: #333;
+  margin: 20px 0;
+}
+
+.about button {
+  background-color: #1344ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.about button:hover {
+  background-color: #174ae4;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about ul li {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 5px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.about ul li:hover {
+  transform: translateY(-5px);
+}
+
+
+
+
+

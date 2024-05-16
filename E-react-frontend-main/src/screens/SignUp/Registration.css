@@ -1,0 +1,65 @@
+.patient-registration-form {
+    max-width: 80rem;
+    /* margin-right: 20px auto; */
+    margin-left: 6rem ;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.patient-registration-form h1 {
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+
+.patform{
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.input-group-reg {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 3rem;
+    text-align: start;
+    margin: 20px;
+    font-size: large;
+    /* margin-bottom: 10px; */
+}
+
+.input-group-reg label {
+    /* flex: 1; */
+    margin-left: 0.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.input-group-reg input {
+    /* flex: 2; */
+    width: 32em;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.patient-button{
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin: 1.5rem;
+    width: 90em;
+}
+
+.patient-button:hover {
+    background-color: #0056b3;
+  }
+.background-color{
+    background-color: #c8daed;   
+    background: url('./Registration_bg.png') no-repeat center center;
+    background-size: cover; 
+}

@@ -1,0 +1,134 @@
+.main-container {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.login-section {
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10%;
+    background-color: #D8E8D4;
+    /* background-color: #D8D8D8; */
+    /* background-color: #274156; */
+    /* background-color: #5e4b2a; */
+    flex-direction: column; /* Vertically stacks the items */
+    justify-content: center; /* Vertically center aligns */
+}
+
+.image-section {
+    flex: 70%;
+    background: url('./Login_image.png') no-repeat center center;
+    background-size: cover; 
+    height: 90vh;
+}
+
+.login-container {
+    width: 90%; 
+    text-align: center; 
+    margin-top: 10rem;
+    background-color: #FAF3E0;
+    margin-bottom: 10%;
+}
+.login{
+    /* margin-bottom: 4%; */
+    margin: 10%;
+}
+
+.input-group {
+    text-align: start;
+    margin: 20px;
+    font-size: large;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000000;
+}
+.login-button {
+    padding: 10px 15px;       /* Some padding for the button */
+    background-color: #007BFF; /* Color of the button */
+    border: none;            /* Remove default border */
+    color: white;            /* Text color */
+    font-size: 16px;         /* Font size */
+    cursor: pointer;         /* Hand cursor on hover */
+    border-radius: 5px;      /* Rounded corners for the button */
+    align-self: stretch;    
+    width: 70%; /* Make the button take full width of container */
+}
+
+.remember-me {
+    display: flex;
+    justify-content: start; 
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+.remember-me label { padding-left: 10px; font-size: 0.9em; /* adds space to the left of the label */ }
+
+.input-group label {justify-content: flex-start; }
+
+.larger-checkbox {
+    transform: scale(1.5);  /*Adjust the value as needed*/
+}
+
+.test{
+    margin-top: 90%;
+}
+.noHoverEffect{
+    color: rgb(172, 27, 27);
+}
+.noHoverEffect:hover {
+    background-color: transparent;
+    text-decoration-line: underline; /* This ensures the background remains transparent on hover */
+}
+
+.optionsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.optionButton {
+    border: 1px solid #007BFF; /* Blue border color to match login button */
+    background-color: #fff; /* White background color */
+    color: #007BFF; /* Blue text color to match login button */
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Hand cursor on hover */
+    flex-grow: 1; /* Ensures buttons take up equal width */
+    text-align: center;
+    margin: 0 5px; /* Some spacing between buttons */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+.optionButton:hover {
+    background-color: #007BFF; /* Blue background color on hover */
+    color: #fff; /* White text color on hover */
+}
+
+.optionButton.selected {
+    background-color: #007BFF; /* Blue background color for selected button */
+    color: #fff; /* White text color for selected button */
+}
+
+.error-message{
+    margin: 1rem;
+    color: red;
+    font-size: medium;
+}

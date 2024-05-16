@@ -1,0 +1,108 @@
+/* AboutUs.css */
+
+.about-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: rgb(19, 40, 224);
+  border-radius: 5px;
+  color: rgb(47, 150, 247);
+  position: relative;
+  z-index: 1;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Adjusted to align to the right */
+  position: relative;
+  overflow: hidden; /* Added to hide overflowing content */
+}
+
+.image {
+  width: 100%;
+  height: 100%; /* Adjusted to cover the full height */
+  object-fit: cover; /* Added to maintain aspect ratio and cover */
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+
+.about-h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  position: relative;
+  z-index: 2; 
+  
+}
+
+.about,
+.team {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(14, 11, 209, 0);
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(11, 17, 54, 0.521);
+  border-radius: 5px;
+}
+
+.about-body h2,
+.about-body p,
+.about-body li {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.about-body ul {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 0;
+}
+
+.about-body li {
+  margin-left: 10px;
+  line-height: 1.5;
+  text-align: left;
+  text-indent: -20px;
+}
+
+.bullet-point {
+  list-style: none;
+  padding-left: 0px;
+  color: rgb(255, 255, 255);
+  background: none;
+  border: none;
+}
+
+.bullet-point::before {
+  content: "●";
+  font-size: 15px;
+  padding-right: 10px;
+  color: white;
+}

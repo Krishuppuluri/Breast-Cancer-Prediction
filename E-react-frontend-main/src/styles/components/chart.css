@@ -1,0 +1,46 @@
+
+.analytics-section {
+    padding: 20px;
+}
+
+
+/* Card Styles */
+.ChartCard {
+    background: #fff; /* White background for the card */
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Very subtle shadow */
+    display: flex;
+    flex-direction: column; /* Ensures content is stacked vertically */
+    align-items: center; /* Centers content horizontally */
+    justify-content: space-between; /* Distributes space between content */
+    padding: 20px; /* Gives the content some space */
+}
+
+.ChartCard:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slightly more pronounced shadow on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.cardContent {
+    width: 100%; /* Ensures content takes full width of the card */
+}
+
+/* Typography */
+.Typography {
+    text-align: center; /* Centers the text */
+    color: #333; /* Dark color for better contrast */
+}
+
+/* Charts - Apple would typically keep it simple, clean, and clear */
+.BarChart, .PieChart {
+    border-radius: 12px; /* Keeping consistency with the card's border-radius */
+}
+
+.Tooltip {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px; /* Apple-like rounded corners */
+    padding: 10px;
+    color: white;
+}

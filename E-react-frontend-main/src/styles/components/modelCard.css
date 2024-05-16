@@ -1,0 +1,79 @@
+.card-Container {
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Very subtle shadow */
+  padding: 10px; /* Reduced padding for less height */
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px; /* Reduced gap for less height */
+  margin-bottom: 10px;
+  background: #fff; /* White background for the card */
+  overflow: hidden;
+
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cardTitle {
+  font-size: 20px; /* Reduced font size for less height */
+  font-weight: bold;
+  color: #6b5b95;
+  margin-bottom: 8px; /* Reduced margin for less height */
+  text-align: center;
+  padding-top: 10px;
+}
+
+.cardDescription {
+  font-size: 14px; /* Reduced font size for less height */
+  color: #6b5b95;
+  text-align: center;
+  flex-grow: 1;
+  /* padding-top: 10px; */
+  padding-bottom: 10px;
+
+}
+
+.actionButton {
+  background-color: #6b5b95;
+  color: white;
+  padding: 8px 16px; /* Reduced padding for less height */
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.actionButton:hover {
+  background-color: #4d3a6b;
+}
+
+/* Responsive design for larger screens */
+@media (min-width: 768px) {
+  .card {
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Very subtle shadow */
+    padding: 10px; /* Reduced padding for less height */
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px; /* Reduced gap for less height */
+    margin-bottom: 10px;
+    background: #fff; /* White background for the card */
+    overflow: hidden;
+  }
+
+  .cardTitle {
+    font-size: 14px;
+  }
+
+  .cardDescription {
+    font-size: 12px;
+  }
+}

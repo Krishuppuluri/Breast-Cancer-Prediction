@@ -1,0 +1,63 @@
+/* Container to center tables and provide max-width */
+.ant-table-container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centering the container */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* subtle shadow for depth */
+  }
+  
+  /* Style for the button */
+  .diagnose-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px auto; /* Centering the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */  
+    align-items: center;
+  }
+  
+  .diagnose-button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+  }
+  
+  /* Result display styling */
+  .result-display {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f8f8; /* Light grey background */
+    display: inline-block;
+    width: auto;
+  }
+  
+  .result-text {
+    color: #333; /* Dark grey color for text */
+    font-weight: bold;
+  }
+  /* Centering button and result container with flexbox */
+.button-and-result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  /* Additional button styling, if needed */
+  .diagnose-button {
+    /* Other styles */
+    cursor: pointer; /* Change mouse pointer on hover */
+  }
+  
+  /* Result display styling */
+  .result-display {
+    /* Other styles */
+    margin-top: 10px; /* Spacing between button and result */
+  }

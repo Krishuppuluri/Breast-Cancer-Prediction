@@ -1,0 +1,45 @@
+/* Add a background color and some padding around the form */
+
+.contact-admin-container {
+  min-height: 400px;
+  height: fit-content;
+  width: fit-content;
+  margin-top: 0px;
+}
+
+.contact-admin-container h1 {
+  font-size: 36px;
+  margin: 10px;  
+  color:  #0288d1;
+  font-family: 'Poppins', sans-serif!important;
+}
+
+.contact-admin-container h4 {
+  margin: 10px;
+  color:  rgb(29, 31, 30);
+  font-family: 'Poppins', sans-serif!important;
+}
+
+
+.contact-admin-container th {
+  background-color: #d5eefc;
+  margin: 10px;
+  color:rgb(44, 44, 44);
+  width: fit-content;
+  }
+
+.contact-admin-container tr {
+  background-color: white;
+  color: rgb(44, 44, 44);
+  border-top:1px solid rgb(44, 44, 44);
+  border-bottom:1px solid rgb(44, 44, 44);
+  width: fit-content;
+  }
+
+  
+
+  .contact-admin-container table{
+    border: 0px;
+  }
+
+

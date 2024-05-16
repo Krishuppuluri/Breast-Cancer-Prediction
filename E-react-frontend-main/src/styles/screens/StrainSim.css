@@ -1,0 +1,119 @@
+.StrainSim {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+  .App-logo_new {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.StrainSim-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #5cfff9;
+
+}
+
+.StrainSim-link {
+  color: #61dafb;
+}
+
+.left_tool {
+  height: 40vmin;
+  pointer-events: none;
+  align-items: start;
+
+}
+
+
+.right_tool {
+  height: 40vmin;
+  pointer-events: none;
+
+
+
+
+}
+.move {
+  transform: translate(50px, 50px);
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.StrainCamera{
+  min-height: 100vh;
+  position: absolute;
+}
+
+.result{
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.result.hasPhoto{
+  left: 0;
+}
+
+video{
+  width: 163%;
+  max-width: 175%;
+  height: auto;
+}
+
+.small_plot{
+  width: 500px;
+  height: 500px;
+}
+.total_plot{
+  width: 500px;
+  height: 500px;
+}
+
+button{
+  text-align: center;
+
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+.button-container button {
+  padding: 10px 20px; /* Adjust padding to increase button size */
+  font-size: 16px; /* Modify font size */
+  /* Add any other styles you'd like */
+}
+
+
+
+
+

@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+/* Color variables */
+:root {
+  --clr-primary: #d50000;
+  --clr-primary-hover: #29e6a7;
+  --clr-primary-dark: #039d69;
+  --clr-gray100: #f9fbff;
+  --clr-gray150: #f4f6fb;
+  --clr-gray200: #eef1f6;
+  --clr-gray300: #e1e5ee;
+  --clr-gray400: #767b91;
+  --clr-gray500: #4f546c;
+  --clr-gray600: #2a324b;
+  --clr-gray700: #161d34;
+}
+
+/* Border radius */
+:root {
+  --radius: 0.2rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Change the number to 5 columns */
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+
+.services {
+  overflow: hidden;
+  box-shadow: 0 2px 20px var(--clr-gray300);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+}
+
+.services__image {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.services__title {
+  padding: 1rem;
+}
+
+.services__description {
+  padding: 0 1rem;
+}
+
+.services__btn {
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid var(--clr-primary);
+  background: transparent;
+  color: var(--clr-primary);
+  border-radius: var(--radius);
+  transition: background 200ms ease-in, color 200ms ease-in;
+}
+
+.services:hover {
+  transform: scale(1.04);
+}
+
+.services:hover .services__btn {
+  background: var(--clr-primary);
+  color: white;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.gradient-line {
+  width: 290px; /* Adjust the width as needed */
+  height: 3px; /* Adjust the height as needed */
+  background: linear-gradient(45deg, #007bff, #00c49a); /* Gradient colors */
+  
+}

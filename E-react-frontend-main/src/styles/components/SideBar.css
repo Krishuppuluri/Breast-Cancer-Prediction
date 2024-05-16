@@ -1,0 +1,66 @@
+/* Sidebar.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+/* Adjust the positioning to place the sidebar on the right side of the page */
+.sidebar {
+  width: 300px;
+  background-color: #333;
+  color: white;
+  padding: 2px;
+  position: fixed; /* Keep the sidebar fixed */
+  top: 60px; /* Position at the top of the screen */
+  right: 0; /* Position on the right side of the screen */
+  height: 100%; /* Set the height to 100% to cover the entire viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif!important; 
+}
+
+/* Adjust padding and alignment */
+.sidebar ul {
+  list-style-type: none;
+  padding: 2px;
+  width: 100%;
+}
+
+.sidebar li {
+  padding: 10px;
+  display: flex; /* Ensure that content is centered horizontally */
+  align-items: center; /* Vertical alignment in the middle */
+  justify-content: center; /* Horizontal alignment in the middle */
+  flex-direction: column;
+  width: 100%;
+  padding-right: 0px; /* Decrease the right side padding */
+}
+
+.sidebar li::after {
+  content: '';
+  display: block;
+  height: 1px;
+  position: relative;
+  background-color: #eee; /* Off-white horizontal line */
+  width: 90%; /* Adjust the width as needed */
+  margin: 10px auto; /* Center the lines horizontally and add spacing between the lines */
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px; /* Increase the text size */
+}
+
+.sidebar li a:hover {
+  background-color: #4a4a4a; /* New background color on hover */
+}
+
+.sidebar li:not(:last-child)::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #eee; /* Off-white horizontal line */
+  width: 90%; /* Adjust the width as needed */
+  margin: 10px auto; /* Add spacing between the lines */
+}

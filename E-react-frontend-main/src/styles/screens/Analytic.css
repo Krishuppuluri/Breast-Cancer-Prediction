@@ -1,0 +1,79 @@
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* align items to the start to avoid stretching */
+  padding: 20px;
+  gap: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width */
+  margin: auto; /* Center the container on the page */
+}
+.chart-buttonContainer {
+  display: flex;
+  flex-wrap: wrap; /* Wrap buttons for responsiveness */
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.chart-button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: 1px solid #ccc; /* subtle border */
+  border-radius: 20px; /* rounded corners */
+  cursor: pointer;
+  background-color: #5D6D7E; /* muted primary color */
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s; /* smooth transition for hover and click */
+}
+
+.chart-button:hover, .chart-button:focus {
+  background-color: #4A5A6A; /* slightly darker on hover */
+  transform: translateY(-2px); /* subtle lift effect */
+}
+
+.chart-button:active {
+  transform: translateY(1px); /* subtle press effect */
+}
+
+.chart-chartContainer {
+  width: 95%; /* Slight margin for visual padding */
+  max-width: 1200px; /* Maximum width for very large screens */
+  height: auto;
+  margin: 0 auto; /* Center align the chart */
+  background-color: #fff; /* White background for charts */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Chart container shadow */
+  padding: 20px;
+}
+.chart-subtitle{
+  padding: 10px;
+}
+/* Restyling the charts (assuming you are using a library like Recharts) */
+.recharts-responsive-container {
+  font-family: 'Arial', sans-serif; /* Use a standard, clean font */
+}
+
+.recharts-legend-item {
+  font-size: 14px; /* Readable legend size */
+}
+
+/* Add additional styles for tooltip, axis, etc., as per your library's classes */
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .chart-button {
+    padding: 10px; /* Smaller padding for smaller screens */
+    flex: none; /* Do not allow buttons to grow */
+    width: auto; /* Auto width based on content */
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-container {
+    padding: 10px; /* Smaller padding for very small screens */
+  }
+}

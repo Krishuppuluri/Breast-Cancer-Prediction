@@ -1,0 +1,70 @@
+/* HealthServices.css */
+ 
+.services-container {
+    text-align: center;
+    padding: 20px;
+  }
+   
+  .page-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+   
+  .gradient-line {
+    height: 4px;
+    width: 40%;
+    margin: 0 auto;
+    background: linear-gradient(to right, #4caf50, #00bcd4);
+    margin-bottom: 30px;
+  }
+   
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+   
+  .services-link {
+    text-decoration: none;
+    color: inherit;
+  }
+   
+  .services {
+    overflow: hidden;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+    background: #fff; /* Set the background color to white */
+  }
+   
+  .services__image {
+    height: 370px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+  }
+   
+  .services__content {
+    padding: 1.5rem;
+  }
+   
+  .services__title {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+   
+  .services__description {
+    font-size: 1.2rem;
+    color: #666;
+  }
+   
+  .services:hover {
+    transform: scale(1.05);
+  }

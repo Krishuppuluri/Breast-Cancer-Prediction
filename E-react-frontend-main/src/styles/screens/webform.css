@@ -1,0 +1,88 @@
+/*Surgery Feedback Form-Christina Sebastian-300279317-Robotic Surgery*/
+.webform {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 2px solid #ccc; /* Added border */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .webform h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .webform  label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .webform  .inputstyle {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .webform select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .webform  input[type="radio"] {
+    display: none;
+  }
+  
+  .webform  input[type="radio"] + label {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .webform  input[type="radio"]:checked + label {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .webform  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .webform  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .webform  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .webform subheading {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  /*Surgery Feedback Form-Christina Sebastian-300279317-Robotic Surgery*/

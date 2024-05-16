@@ -1,0 +1,5 @@
+# dependencies added now it should work
+
+# it is important to commit package-lock. json to your version control system along with your code so that all team members have the same dependencies installed
+/node_modules
+yarn.lock

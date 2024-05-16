@@ -1,0 +1,10 @@
+/* TestimonialsPage.css */
+.testimonials-page {
+    background-image: url('./Feedback.jpg'); /* Update the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f9f9f9; /* Fallback color if the image doesn't load */
+    /* Add any other styles you need for the page */
+  }
+  

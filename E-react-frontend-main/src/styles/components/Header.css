@@ -1,0 +1,191 @@
+/* Header.css 
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  */
+
+
+  /*Header New*/
+
+  *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+  .headerbody{
+  font-family: 'Ubuntu', sans-serif;
+  
+  /*font-family: sans-serif;
+    font-family: montserrat;
+    font-family: Arial, Helvetica, sans-serif;*/
+  }
+  nav{
+    /*background: #0082e6;*/
+    /*background: #565d62;
+    height: 80px;
+    width: 100%;*/
+    background: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+    height: 60px;
+    line-height: 60px;
+
+  }
+
+  label.logo{
+   
+    color: white;
+    font-size: 2em;
+    line-height: 60px;
+    padding: 0 100px;
+    font-weight: 0;
+  }
+  
+  label.logo span{
+  color:  #0288d1;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 100px;
+    display: inline-block;
+  
+
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 0px;
+
+
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+  nav ul li a{
+    color: rgb(252, 252, 252);
+    
+    /*border: 0.5px solid white;
+      border-radius: 3px;
+      font-family: 'Poppins', sans-serif;
+    font-size: 0.9em;
+    padding: 7px 13px;
+    margin: 2px;
+    height: 50px;*/
+    display: block;
+    font-family: 'Poppins', sans-serif!important; ;
+    /*font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bold*/
+    
+    font-size: 0.9em;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    padding: 0 4px;
+    text-transform: uppercase;
+    
+  }
+  a.active,a:hover{
+   /*background: #1b9bff;
+   background: #3a3b3c;*/
+   color: rgb(182, 182, 182);
+    transition: .5s;
+    
+    
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 1328px){
+    label.logo{
+      font-size: 12px;
+      padding-left: 2px;
+    }
+    nav ul li a{
+      font-size: 10px;
+    }
+  }
+  
+  @media (max-width: 975px){
+    label.logo{
+      font-size: 10px;
+      padding-left: 1px;
+    }
+    nav ul li a{
+      font-size: 8px;
+    }
+  }
+  @media (max-width: 902px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgb(44, 44, 44);
+      /*background: #2c3e50;*/
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul {
+      display: flex; /* Using flexbox */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
+      /* Other styles */
+    }
+    nav ul li{
+      display: block;
+      margin: 10px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 16px; /* Adjust font size */
+      white-space: nowrap; /* Prevent text wrapping */
+    }
+    a:hover,a.active{
+      background: none;
+      /*color: #0082e6;*/
+      color: rgb(182, 182, 182);
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  section{
+    /*background: url(bg1.PNG) no-repeat;*/
+    background-size: cover;
+    height: calc(100vh - 80px);
+  }

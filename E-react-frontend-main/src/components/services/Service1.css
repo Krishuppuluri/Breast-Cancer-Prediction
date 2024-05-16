@@ -1,0 +1,24 @@
+/* Service1.css */
+.body{
+  font-family:'Times New Roman', Times, serif;
+}
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+ 
+  .service-card {
+    min-width: 275px;
+    max-width: 300px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.05);
+    }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .service-content {
+    text-align: center;
+  }

@@ -1,0 +1,54 @@
+/* Landing Page Styles */
+.landing-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.landing-page h1 {
+  font-size: 36px;
+  margin: 20px 0;
+  color: #1344ff;
+}
+
+.cta-button {
+  background-color: #1344ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #174ae4;
+}
+
+.main-img{
+
+  background-image: url(main-image.jpg);
+  background-color: #174ae4;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  word-wrap: break-word;
+}
+
+th {
+  background-color: #f4f4f4;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

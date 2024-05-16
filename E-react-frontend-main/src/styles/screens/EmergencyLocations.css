@@ -1,0 +1,111 @@
+.emergency-locations__container {
+  display: flex;
+  flex-direction: row;
+  /* Elements side by side */
+  align-items: flex-start;
+  /* Align items to the top */
+  justify-content: center;
+  /* Center the items horizontally */
+  gap: 20px;
+  /* Space between map and list */
+  margin: 0 auto;
+  /* Center the container on the page */
+  max-width: 1200px;
+  /* Maximum width of the container */
+  height: 700px;
+  /* Example fixed height */
+  margin-bottom: 10px;
+  /* Space below the title and description */
+
+}
+
+.emergency-locations__map-container {
+  flex: 1;
+  /* Allows the map to grow and fill available space */
+  height: 700px;
+  /* Fixed height for the map */
+  width: 75%;
+  /* Width of map relative to its container */
+}
+
+.emergency-locations__map {
+  width: 100%;
+  /* The map fills the container */
+  height: 100%;
+  /* The map fills the container */
+  border-radius: 8px;
+  /* Rounded corners for the map */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  /* Shadow for depth */
+}
+
+.emergency-locations__list-container {
+  width: 25%;
+  /* Width of list relative to its container */
+  height: 700px;
+  /* Same height as map to align them nicely */
+  overflow-y: hidden;
+  border-radius: 2px;
+}
+
+.emergency-locations__list-container .ant-list-item {
+  margin-bottom: 8px;
+}
+
+.emergency-locations__list-container .ant-list-item:hover {
+  background-color: #eeeeee;
+  cursor: pointer;
+}
+
+/* Style for category buttons */
+.category-buttons {
+  display: flex;
+  justify-content: center;
+  /* Center buttons horizontally */
+  margin-bottom: 20px;
+  /* Space below the buttons */
+}
+
+.category-buttons .ant-btn {
+  margin: 0 10px;
+  /* Space between buttons */
+  margin-top: 10px;
+}
+
+/* Style for the title and description */
+.emergency-locations__title,
+.emergency-locations__description {
+  text-align: center;
+  /* Center text horizontally */
+  width: 100%;
+  /* Full width */
+  margin-bottom: 10px;
+  /* Space below the title and description */
+}
+
+.emergency-locations__description {
+  font-size: 1.2em;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+  .emergency-locations__container {
+    flex-direction: column;
+    /* Stack them on top of each other */
+    align-items: stretch;
+    /* Stretch children to fit the container width */
+  }
+
+  .emergency-locations__map-container,
+  .emergency-locations__list-container {
+    width: 100%;
+    /* Full width for small screens */
+    margin-bottom: 20px;
+    /* Space below each element */
+  }
+
+  .emergency-locations__map {
+    height: 500px;
+    /* Adjust map height on smaller screens */
+  }
+}
